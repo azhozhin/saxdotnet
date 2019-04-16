@@ -1,0 +1,93 @@
+
+                    Change Log for SAX for .NET
+                    
+Release 2.0
+
+* Ported to .NET 2.0.
+* Made IProperty interface generic - all non-generic derived
+  interfaces,like IStringProperty, are now obsolete.
+* Changed LineNumber and ColumnNumber properties to a 64 bit integer type.
+* Made InputSource a generic class and removed StreamSource and
+  ReaderInputSource as they are no longer needed.
+* Documentation updates/improvements.
+* Updated solution and project files for use under Visual Studio 2005.
+
+Release 1.5
+
+* SAX core and extensions have been unified, so the Org.System.Xml.SaxExt
+  and Org.System.Xml.SaxExt.Helpers namespaces have been removed.
+  - IAttributes2 has been merged with IAttributes.
+  - ILocator2 has been merged with ILocator.
+  - IEntityResolver2 has been renamed to IEntityResolver (replacing it).
+  - IXmlReaderControl has been merged with IXmlReader.
+  - The corresponding helper classes have been adjusted.
+  - changed, removed or added features and properties accordingly.
+* Usage of exceptions has been streamlined to give preference to
+  pre-defined .NET framework classes. The SaxNotSupportedException,
+  SaxNotRecognizedException and SaxArgumentException classes have
+  been removed.
+* Removed the IsDeclared() method from IAttributes interface and replaced
+  its functionality with the new "UNDECLARED" return value for GetType().
+* Added the EntityType property to the ILocator interface. This makes the
+  "is-standalone" standard feature redundant, which has been removed.
+* Call requirements for IContentHandler.EndDocument() have been updated
+  and clarified.
+* It has also been clarified that for names that are not in any namespace,
+  namespace URIs and prefixes must be the empty string and not null.
+* The conformance demo now also includes SAX conformance checks.
+
+Release 1.0
+
+* A new assembly Org.System.Xml was added and some basic types and
+  namespace support classes were moved there, as these and the SAX
+  API are mutually independent.
+* Changes to the build procedure. The build scripts are now C# based
+  and should work on recent versions of Mono as well.
+  IDE support was switched from SharpDevelop to VS.NET 2003.
+* Resource files changed from .resources to .resx format.
+  The build scripts will convert them back to .resources files
+  as needed. 
+* Strong named Sax.dll and Org.System.Xml.dll. 
+
+Release 0.95 -> 0.96
+
+* Changed naming style for public constants from camel casing
+  to Pascal casing. Fixed references to these constants.
+* Improved and clarified documentation comments, pointing
+  out differences to the original Java implementation.
+* Minor bug fixes in namespace support classes.
+  Also documented that absence of a namespace is indicated
+  by a null URI, not an empty string.
+* Added overloaded constructors to StreamInputSource and
+  ReaderInputSource which take a systemId as additional argument.
+* Marked assembly as CLS compliant.
+* Improved build scripts and instructions.
+* Added another demo application which tests a parser against
+  the W3C XML test suite.
+
+Release 0.9 -> 0.95
+
+* Changed namespace root from System.Xml to Org.System.Xml.
+* Renamed XmlNamespaces.cs file to Namespaces.cs.
+* Improved assembly loading in SAXReaderFactory.
+* Added the file XmlRes.cs and Split the resources into two,
+  parts, one associated with the Org.System.Xml namespace
+  and one for the Org.System.Xml.Sax namespace.
+* Improved documentation comments.
+* Added a demo application for loading a tree view.
+
+Release 0.8 -> 0.9:
+
+* Reverted back from the IInputSource interface to just an 
+  InputSource class (hierarchy), which seems a better fit for C#,
+  as it is for Java.
+* Completely eliminated the SAXVendor factory approach copied
+  from the Delphi port, and introduced a SAXReaderFactory class
+  similar to the XMLReaderFactory class in Java. Moved the code
+  to SAXHelpers.cs.
+* Replaced the SAXParseException arguments for the error handler
+  call-backs with arguments of type ParseError.
+* Added IXMLReaderControl interface.
+* Improved and added documentation comments.
+* Added localization features and resources.
+* Changed namespace from KDS.Xml(.Sax) to System.Xml(.Sax).

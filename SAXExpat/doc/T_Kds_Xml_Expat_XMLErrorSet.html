@@ -1,0 +1,191 @@
+<html dir="LTR" xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:tool="http://www.microsoft.com/tooltip" xmlns:ndoc="urn:ndoc-preprocess">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <title>XMLErrorSet Enumeration</title>
+    <link rel="stylesheet" type="text/css" href="ndoc.css"> </link>
+    <link rel="stylesheet" type="text/css" href="user.css"> </link>
+    <script type="text/javascript" src="ndoc.js"> </script>
+  </head>
+  <body style="display: none;">
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+    <img id="dropDownImage" style="display:none; height:0; width:0;" src="drpdown.gif" />
+    <img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="drpdown_orange.gif" />
+    <img id="collapseImage" style="display:none; height:0; width:0;" src="collapse.gif" />
+    <img id="expandImage" style="display:none; height:0; width:0;" src="exp.gif" />
+    <img id="collapseAllImage" style="display:none; height:0; width:0;" src="collall.gif" />
+    <img id="expandAllImage" style="display:none; height:0; width:0;" src="expall.gif" />
+    <img id="copyImage" style="display:none; height:0; width:0;" src="copycode.gif" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="copycodeHighlight.gif" />
+    <div id="header">
+      <table width="100%" id="topTable">
+        <tr id="headerTableRow1">
+          <td align="left">
+            <span id="runningHeaderText">SAX for .NET Adapter for Expat</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow2">
+          <td align="left">
+            <span id="nsrTitle">XMLErrorSet Enumeration</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow3">
+          <td>
+            <a id="seeAlsoSectionLink" href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a>
+            <a id="exampleSectionLink" href="#codeExampleToggle" onclick="OpenSection(codeExampleToggle)">Example</a>
+          </td>
+        </tr>
+      </table>
+      <table width="100%" id="bottomTable" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage)" tabindex="0">
+              <img ID="toggleAllImage" class="toggleAll" src="collall.gif" />
+              <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">
+							Collapse All
+						</label>
+              <label id="expandAllLabel" for="toggleAllImage" style="display: none;">
+							Expand All
+						</label>
+            </span>
+            <span id="languageFilterToolTip" style="cursor:default;" onmouseover="languageFilterImage.src=dropDownHoverImage.src;" onfocusin="languageFilterImage.src=dropDownHoverImage.src;" onmouseout="languageFilterImage.src=dropDownImage.src;" onfocusout="languageFilterImage.src=dropDownImage.src;" tabindex="0">
+              <img id="languageFilterImage" src="drpdown.gif" />
+              <label id="showAllLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: All
+			</label>
+              <label id="multipleLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: Multiple
+			</label>
+              <label id="vbLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: Visual Basic
+			</label>
+              <label id="csLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: C#
+			</label>
+              <label id="cLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: C++
+			</label>
+              <label id="jsharpLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: J#
+			</label>
+              <label id="jsLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: JScript
+			</label>
+            </span>
+          </td>
+        </tr>
+      </table>
+      <span style="display:none" id="languageSpan">
+        <input id="vbDeclarationCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="vbDeclarationCheckbox">
+				Visual Basic (Declaration)
+			</label>
+        <br />
+        <input id="vbUsageCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="vbUsageCheckbox">
+				Visual Basic (Usage)
+			</label>
+        <br />
+        <input id="csCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="csCheckbox">
+				C#
+			</label>
+        <br />
+        <input id="cCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="cCheckbox">
+				C++
+			</label>
+        <br />
+        <input id="jsharpCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="jsharpCheckbox">
+				J#
+			</label>
+        <br />
+        <input id="jsCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="jsCheckbox">
+				JScript
+			</label>
+        <br />
+      </span>
+    </div>
+    <div id="mainSection">
+      <div id="mainBody">
+        <div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+        <p>Bit set representation of <nobr><a href="T_Kds_Xml_Expat_XMLError.html">XMLError</a></nobr>.</p>
+        <br />
+        <p>
+								This enumeration has a
+								<a href="http://msdn2.microsoft.com/en-us/library/System.FlagsAttribute" target="_top">FlagsAttribute</a>
+								attribute that allows a bitwise combination of its member values.
+							</p>
+        <b>Namespace: </b>
+        <a href="N_Kds_Xml_Expat.html">Kds.Xml.Expat</a>
+        <br />
+        <b>Assembly: </b>ExpatInterop (in ExpatInterop.dll)
+		<br /><h1 class="heading"><span onclick="ExpandCollapse(syntaxToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(syntaxToggle)" tabindex="0"><img id="syntaxToggle" class="toggle" name="toggleSwitch" src="collapse.gif" />Syntax</span></h1><div id="syntaxSection" class="section" name="collapseableSection"><div id="syntaxCodeBlocks" class="code"><span codeLanguage="VisualBasicDeclaration"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">Visual Basic (Declaration)</th></tr><tr><td class="syntax"><span class="attribute">&lt;<a href="http://msdn2.microsoft.com/en-us/library/System.FlagsAttribute" target="_top">FlagsAttribute</a>&gt;</span><br />Public Enum XMLErrorSet As Long</td></tr></table></span><span codeLanguage="CSharp"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">C#</th></tr><tr><td class="syntax"><span class="attribute">[<a href="http://msdn2.microsoft.com/en-us/library/System.FlagsAttribute" target="_top">FlagsAttribute</a>]</span><br />public enum XMLErrorSet : long</td></tr></table></span><span codeLanguage="ManagedCPlusPlus"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">C++</th></tr><tr><td class="syntax"><span class="attribute">[<a href="http://msdn2.microsoft.com/en-us/library/System.FlagsAttribute" target="_top">FlagsAttribute</a>]</span><br />public enum class XMLErrorSet : __int64</td></tr></table></span><span codeLanguage="JSharp"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">J#</th></tr><tr><td class="syntax"><span class="attribute">/** @attribute <a href="http://msdn2.microsoft.com/en-us/library/System.FlagsAttribute" target="_top">FlagsAttribute</a>() */</span><br />public enum XMLErrorSet  long</td></tr></table></span><span codeLanguage="JScript"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">JScript</th></tr><tr><td class="syntax">public enum XMLErrorSet : long</td></tr></table></span></div></div><h1 class="heading"><span style="cursor:default;" onclick="ExpandCollapse(remarksDataToggle)" onkeypress="ExpandCollapse_CheckKey(remarksDataToggle)" tabindex="0"><img id="remarksDataToggle" class="toggle" name="toggleSwitch" src="collapse.gif" />Remarks</span></h1><div id="remarksDataSection" class="section" name="collapseableSection"><p>Useful when testing for groups of errors. Must be kept in sync with <nobr><a href="T_Kds_Xml_Expat_XMLError.html">XMLError</a></nobr>.</p></div><h1 class="heading"><span style="cursor:default;" onclick="ExpandCollapse(membersToggle)" onkeypress="ExpandCollapse_CheckKey(membersToggle)" tabindex="0"><img id="membersToggle" class="toggle" name="toggleSwitch" src="collapse.gif" />Members</span></h1><div id="membersSection" class="section" name="collapseableSection"><table width="100%" class="memberListTable"><tr valign="top"><th><nobr>Member Name</nobr></th><th width="90%">Description</th><th width="10%">Value</th></tr>
+<tr valign="top"><td><b>NONE</b></td><td> </td><td>1</td></tr>
+<tr valign="top"><td><b>NO_MEMORY</b></td><td> </td><td>2</td></tr>
+<tr valign="top"><td><b>SYNTAX</b></td><td> </td><td>4</td></tr>
+<tr valign="top"><td><b>NO_ELEMENTS</b></td><td> </td><td>8</td></tr>
+<tr valign="top"><td><b>INVALID_TOKEN</b></td><td> </td><td>16</td></tr>
+<tr valign="top"><td><b>UNCLOSED_TOKEN</b></td><td> </td><td>32</td></tr>
+<tr valign="top"><td><b>PARTIAL_CHAR</b></td><td> </td><td>64</td></tr>
+<tr valign="top"><td><b>TAG_MISMATCH</b></td><td> </td><td>128</td></tr>
+<tr valign="top"><td><b>DUPLICATE_ATTRIBUTE</b></td><td> </td><td>256</td></tr>
+<tr valign="top"><td><b>JUNK_AFTER_DOC_ELEMENT</b></td><td> </td><td>512</td></tr>
+<tr valign="top"><td><b>PARAM_ENTITY_REF</b></td><td> </td><td>1024</td></tr>
+<tr valign="top"><td><b>UNDEFINED_ENTITY</b></td><td> </td><td>2048</td></tr>
+<tr valign="top"><td><b>RECURSIVE_ENTITY_REF</b></td><td> </td><td>4096</td></tr>
+<tr valign="top"><td><b>ASYNC_ENTITY</b></td><td> </td><td>8192</td></tr>
+<tr valign="top"><td><b>BAD_CHAR_REF</b></td><td> </td><td>16384</td></tr>
+<tr valign="top"><td><b>BINARY_ENTITY_REF</b></td><td> </td><td>32768</td></tr>
+<tr valign="top"><td><b>ATTRIBUTE_EXTERNAL_ENTITY_REF</b></td><td> </td><td>65536</td></tr>
+<tr valign="top"><td><b>MISPLACED_XML_PI</b></td><td> </td><td>131072</td></tr>
+<tr valign="top"><td><b>UNKNOWN_ENCODING</b></td><td> </td><td>262144</td></tr>
+<tr valign="top"><td><b>INCORRECT_ENCODING</b></td><td> </td><td>524288</td></tr>
+<tr valign="top"><td><b>UNCLOSED_CDATA_SECTION</b></td><td> </td><td>1048576</td></tr>
+<tr valign="top"><td><b>EXTERNAL_ENTITY_HANDLING</b></td><td> </td><td>2097152</td></tr>
+<tr valign="top"><td><b>NOT_STANDALONE</b></td><td> </td><td>4194304</td></tr>
+<tr valign="top"><td><b>UNEXPECTED_STATE</b></td><td> </td><td>8388608</td></tr>
+<tr valign="top"><td><b>ENTITY_DECLARED_IN_PE</b></td><td> </td><td>16777216</td></tr>
+<tr valign="top"><td><b>FEATURE_REQUIRES_XML_DTD</b></td><td> </td><td>33554432</td></tr>
+<tr valign="top"><td><b>CANT_CHANGE_FEATURE_ONCE_PARSING</b></td><td> </td><td>67108864</td></tr>
+<tr valign="top"><td><b>UNBOUND_PREFIX</b></td><td> </td><td>134217728</td></tr>
+<tr valign="top"><td><b>UNDECLARING_PREFIX</b></td><td> </td><td>268435456</td></tr>
+<tr valign="top"><td><b>INCOMPLETE_PE</b></td><td> </td><td>536870912</td></tr>
+<tr valign="top"><td><b>XML_DECL</b></td><td> </td><td>1073741824</td></tr>
+<tr valign="top"><td><b>TEXT_DECL</b></td><td> </td><td>2147483648</td></tr>
+<tr valign="top"><td><b>PUBLICID</b></td><td> </td><td>4294967296</td></tr>
+<tr valign="top"><td><b>SUSPENDED</b></td><td> </td><td>8589934592</td></tr>
+<tr valign="top"><td><b>NOT_SUSPENDED</b></td><td> </td><td>17179869184</td></tr>
+<tr valign="top"><td><b>ABORTED</b></td><td> </td><td>34359738368</td></tr>
+<tr valign="top"><td><b>FINISHED</b></td><td> </td><td>68719476736</td></tr>
+<tr valign="top"><td><b>SUSPEND_PE</b></td><td> </td><td>137438953472</td></tr>
+<tr valign="top"><td><b>RESERVED_PREFIX_XML</b></td><td> </td><td>274877906944</td></tr>
+<tr valign="top"><td><b>RESERVED_PREFIX_XMLNS</b></td><td> </td><td>549755813888</td></tr>
+<tr valign="top"><td><b>RESERVED_NAMESPACE_URI</b></td><td> </td><td>1099511627776</td></tr>
+<tr valign="top"><td><b>OPERATIONAL</b></td><td> </td><td>128949682176</td></tr></table></div><h1 class="heading"><span style="cursor:default;" onclick="ExpandCollapse(seeAlsoToggle)" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle)" tabindex="0"><img id="seeAlsoToggle" class="toggle" name="toggleSwitch" src="collapse.gif" />See Also</span></h1><div id="seeAlsoSection" class="section" name="collapseableSection"><a href="N_Kds_Xml_Expat.html">Kds.Xml.Expat Namespace</a></div></div>
+      <DIV CLASS="footer">
+        <p>
+          <center>
+            <font color="red">
+              <i>
+                Syntax based on .NET Framework version 2.0.<br />
+                Documentation version 2.0.0.0.
+              </i>
+            </font>
+          </center>
+        </p>
+      </DIV>
+      <hr />
+      <div id="footer">
+        <p>
+          <a href="mailto:karl@waclawek.net?subject=SAX%20for%20.NET%20Adapter%20for%20Expat%202.0.0.0%20Documentation%20Feedback:%20XMLErrorSet%20Enumeration">Send comments on this topic.</a>
+        </p>
+        <p>
+          <a>2004 to 2006 Karl Waclawek</a>
+        </p>
+        <p>Generated from assembly ExpatInterop [2.0.2441.23422]</p>
+      </div><!--[if gte IE 5]><tool:tip element="languageFilterToolTip" avoidmouse="false" /><![endif]--></div>
+  </body>
+</html>

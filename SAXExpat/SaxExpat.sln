@@ -1,0 +1,40 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C# Express 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaxExpat", "SaxExpat\SaxExpat.csproj", "{2C79014E-1142-4607-9C5D-BFAEAEFAE146}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpatInterop", "ExpatInterop\ExpatInterop.csproj", "{032666AE-8621-4DD3-B1F7-C0D883E932CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KdsSax", "SAX\KdsSax.csproj", "{62C01BF5-19A0-4B34-8572-3922216193CF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{37510AF2-0F14-4D27-AB49-3D11B1F2C9B9} = {37510AF2-0F14-4D27-AB49-3D11B1F2C9B9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KdsText", "Util\Text\KdsText.csproj", "{37510AF2-0F14-4D27-AB49-3D11B1F2C9B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C79014E-1142-4607-9C5D-BFAEAEFAE146}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{2C79014E-1142-4607-9C5D-BFAEAEFAE146}.Debug|Default.Build.0 = Debug|Any CPU
+		{2C79014E-1142-4607-9C5D-BFAEAEFAE146}.Release|Default.ActiveCfg = Release|Any CPU
+		{2C79014E-1142-4607-9C5D-BFAEAEFAE146}.Release|Default.Build.0 = Release|Any CPU
+		{032666AE-8621-4DD3-B1F7-C0D883E932CA}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{032666AE-8621-4DD3-B1F7-C0D883E932CA}.Debug|Default.Build.0 = Debug|Any CPU
+		{032666AE-8621-4DD3-B1F7-C0D883E932CA}.Release|Default.ActiveCfg = Release|Any CPU
+		{032666AE-8621-4DD3-B1F7-C0D883E932CA}.Release|Default.Build.0 = Release|Any CPU
+		{62C01BF5-19A0-4B34-8572-3922216193CF}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{62C01BF5-19A0-4B34-8572-3922216193CF}.Debug|Default.Build.0 = Debug|Any CPU
+		{62C01BF5-19A0-4B34-8572-3922216193CF}.Release|Default.ActiveCfg = Release|Any CPU
+		{62C01BF5-19A0-4B34-8572-3922216193CF}.Release|Default.Build.0 = Release|Any CPU
+		{37510AF2-0F14-4D27-AB49-3D11B1F2C9B9}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{37510AF2-0F14-4D27-AB49-3D11B1F2C9B9}.Debug|Default.Build.0 = Debug|Any CPU
+		{37510AF2-0F14-4D27-AB49-3D11B1F2C9B9}.Release|Default.ActiveCfg = Release|Any CPU
+		{37510AF2-0F14-4D27-AB49-3D11B1F2C9B9}.Release|Default.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

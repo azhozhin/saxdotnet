@@ -1,0 +1,733 @@
+<html dir="LTR" xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:tool="http://www.microsoft.com/tooltip" xmlns:ndoc="urn:ndoc-preprocess">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <title>StdExpatParser Members</title>
+    <link rel="stylesheet" type="text/css" href="ndoc.css"> </link>
+    <link rel="stylesheet" type="text/css" href="user.css"> </link>
+    <script type="text/javascript" src="ndoc.js"> </script>
+  </head>
+  <body style="display: none;">
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+    <img id="dropDownImage" style="display:none; height:0; width:0;" src="drpdown.gif" />
+    <img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="drpdown_orange.gif" />
+    <img id="collapseImage" style="display:none; height:0; width:0;" src="collapse.gif" />
+    <img id="expandImage" style="display:none; height:0; width:0;" src="exp.gif" />
+    <img id="collapseAllImage" style="display:none; height:0; width:0;" src="collall.gif" />
+    <img id="expandAllImage" style="display:none; height:0; width:0;" src="expall.gif" />
+    <img id="copyImage" style="display:none; height:0; width:0;" src="copycode.gif" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="copycodeHighlight.gif" />
+    <div id="header">
+      <table width="100%" id="topTable">
+        <tr id="headerTableRow1">
+          <td align="left">
+            <span id="runningHeaderText">SAX for .NET Adapter for Expat</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow2">
+          <td align="left">
+            <span id="nsrTitle">StdExpatParser Members</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow3">
+          <td>
+            <a id="seeAlsoSectionLink" href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a>
+            <a id="exampleSectionLink" href="#codeExampleToggle" onclick="OpenSection(codeExampleToggle)">Example</a>
+            <a href="#PublicConstructorsToggle" onclick="OpenSection(PublicConstructorsToggle)">Constructors</a>
+            <a href="#PublicPropertiesToggle" onclick="OpenSection(PublicPropertiesToggle)">Properties</a>
+            <a href="#PublicMethodsToggle" onclick="OpenSection(PublicMethodsToggle)">Methods</a>
+            <a href="#PublicEventsToggle" onclick="OpenSection(PublicEventsToggle)">Events</a>
+          </td>
+        </tr>
+      </table>
+      <table width="100%" id="bottomTable" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage)" tabindex="0">
+              <img ID="toggleAllImage" class="toggleAll" src="collall.gif" />
+              <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">
+							Collapse All
+						</label>
+              <label id="expandAllLabel" for="toggleAllImage" style="display: none;">
+							Expand All
+						</label>
+            </span>
+            <span id="membersOptionsFilterToolTip" style="cursor:default;" onmouseover="membersOptionsFilterImage.src=dropDownHoverImage.src;" onfocusin="membersOptionsFilterImage.src=dropDownHoverImage.src;" onmouseout="membersOptionsFilterImage.src=dropDownImage.src;" onfocusout="membersOptionsFilterImage.src=dropDownImage.src;" tabindex="0">
+              <img id="membersOptionsFilterImage" src="drpdown.gif" />
+              <label id="showAllMembersLabel" for="membersOptionsFilterImage" style="display: none;">
+				Members Options: Show All
+			</label>
+              <label id="filteredMembersLabel" for="membersOptionsFilterImage" style="display: none;">
+				Members Options: Filtered
+			</label>
+            </span>
+          </td>
+        </tr>
+      </table>
+      <span style="display:none" id="membersOptionsSpan">
+        <input id="inheritedCheckbox" type="checkbox" name="membersOptionsFilter" onClick="SetMembersOptions(this)" />
+        <label class="membersOptionsFilter" for="inheritedCheckbox">
+				Include Inherited Members
+			</label>
+        <br />
+        <input id="protectedCheckbox" type="checkbox" name="membersOptionsFilter" onClick="SetMembersOptions(this)" />
+        <label class="membersOptionsFilter" for="protectedCheckbox">
+				Include Protected Members
+			</label>
+        <br />
+        <input id="assemblyCheckbox" type="checkbox" name="membersOptionsFilter" onClick="SetMembersOptions(this)" />
+        <label class="membersOptionsFilter" for="assemblyCheckbox">
+				Include Internal Members
+			</label>
+        <br />
+        <input id="privateCheckbox" type="checkbox" name="membersOptionsFilter" onClick="SetMembersOptions(this)" />
+        <label class="membersOptionsFilter" for="privateCheckbox">
+				Include Private Members
+			</label>
+        <br />
+        <input id="netcfCheckbox" type="checkbox" name="membersOptionsFilter" onClick="SetMembersOptions(this)" />
+        <label class="membersOptionsFilter" for="netcfCheckbox">
+				.NET Compact Framework Members Only
+			</label>
+        <br />
+      </span>
+    </div>
+    <div id="mainSection">
+      <div id="mainBody">
+        <div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+        <p>Convenience declaration, so that a basic <nobr><a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a></nobr> can be used without having to declare a subclass of <nobr><a href="T_Kds_Xml_Expat_EntityParseContext`3.html">EntityParseContext</a></nobr>.</p>
+        <br />
+        <p>The following tables list the members exposed by <a href="T_Kds_Xml_Expat_StdExpatParser.html">StdExpatParser</a>.</p>
+        <h1 class="heading">
+          <span style="cursor:default;" tabindex="0" onclick="ExpandCollapse(PublicConstructorsToggle)" onkeypress="ExpandCollapse_CheckKey(PublicConstructorsToggle)">
+            <img class="toggle" name="toggleSwitch" src="collapse.gif" id="PublicConstructorsToggle" />Public Constructors</span>
+        </h1>
+        <div class="section" name="collapseableSection" id="PublicConstructorsSection">
+          <table width="100%" class="memberListTable">
+            <col width="10%" />
+            <col width="30%" />
+            <col width="60%" />
+            <tr>
+              <th style="border-right-style: none;"> </th>
+              <th align="left" style="border-left-style: none; border-right-style: none;">Name</th>
+              <th align="left" style="border-left-style: none;">Description</th>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell">
+                <a href="C_Kds_Xml_Expat_StdExpatParser_ctor.html">StdExpatParser</a>
+              </td>
+              <td> </td>
+            </tr>
+          </table>
+          <a href="#mainBody">Top</a>
+        </div>
+        <h1 class="heading">
+          <span style="cursor:default;" tabindex="0" onclick="ExpandCollapse(PublicPropertiesToggle)" onkeypress="ExpandCollapse_CheckKey(PublicPropertiesToggle)">
+            <img class="toggle" name="toggleSwitch" src="collapse.gif" id="PublicPropertiesToggle" />Public Properties</span>
+        </h1>
+        <div class="section" name="collapseableSection" id="PublicPropertiesSection">
+          <table width="100%" class="memberListTable">
+            <col width="10%" />
+            <col width="30%" />
+            <col width="60%" />
+            <tr>
+              <th style="border-right-style: none;"> </th>
+              <th align="left" style="border-left-style: none; border-right-style: none;">Name</th>
+              <th align="left" style="border-left-style: none;">Description</th>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_AttlistDeclHandler.html">AttlistDeclHandler</a>
+              </td>
+              <td>Handler for attribute list declarations. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_CharacterDataHandler.html">CharacterDataHandler</a>
+              </td>
+              <td>Handler for character data. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_CommentHandler.html">CommentHandler</a>
+              </td>
+              <td>Handler for comments. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_CurrentColumnNumber.html">CurrentColumnNumber</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_CurrentLineNumber.html">CurrentLineNumber</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_DefaultHandler.html">DefaultHandler</a>
+              </td>
+              <td>Handler for unhandled events. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_ElementDeclHandler.html">ElementDeclHandler</a>
+              </td>
+              <td>Handler for element declarations. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_Encoding.html">Encoding</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_EndCdataSectionHandler.html">EndCdataSectionHandler</a>
+              </td>
+              <td>Handler for end of CDATA section. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_EndDoctypeDeclHandler.html">EndDoctypeDeclHandler</a>
+              </td>
+              <td>Handler for end of Doctype declaration. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_EndElementHandler.html">EndElementHandler</a>
+              </td>
+              <td>Handler for end tag. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_EndNamespaceDeclHandler.html">EndNamespaceDeclHandler</a>
+              </td>
+              <td>Handler called when namespace scope ends. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_EntityContext.html">EntityContext</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_EntityDeclHandler.html">EntityDeclHandler</a>
+              </td>
+              <td>Handler for entity declarations. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_Error.html">Error</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><b>IgnoreTimeoutError</b></td>
+              <td>Indicates if a <nobr><a href="http://msdn2.microsoft.com/en-us/library/System.NotSupportedException" target="_top">NotSupportedException</a></nobr> should be ignored when setting the value of <nobr><a href="http://msdn2.microsoft.com/en-us/library/System.Net.WebRequest.Timeout" target="_top">Timeout</a></nobr>. (inherited from <a href="T_Kds_Xml_Expat_StdExpatParser`3.html">StdExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_Namespaces.html">Namespaces</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_NotationDeclHandler.html">NotationDeclHandler</a>
+              </td>
+              <td>Handler for notation declarations. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_NotStandaloneHandler.html">NotStandaloneHandler</a>
+              </td>
+              <td>Handler called when document is not "standalone". (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_NSTriplets.html">NSTriplets</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_Parsing.html">Parsing</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_ParsingStatus.html">ParsingStatus</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_ProcessingInstructionHandler.html">ProcessingInstructionHandler</a>
+              </td>
+              <td>Handler for processing instructions. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_SkipInternal.html">SkipInternal</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_SkippedEntityHandler.html">SkippedEntityHandler</a>
+              </td>
+              <td>Handler called when an entity reference needed to be skipped. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_SpecifiedAttributeCount.html">SpecifiedAttributeCount</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_StartCdataSectionHandler.html">StartCdataSectionHandler</a>
+              </td>
+              <td>Handler for start of CDATA section. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_StartDoctypeDeclHandler.html">StartDoctypeDeclHandler</a>
+              </td>
+              <td>Handler for start of Doctype declaration. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_StartElementHandler.html">StartElementHandler</a>
+              </td>
+              <td>Handler for start tag. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_StartNamespaceDeclHandler.html">StartNamespaceDeclHandler</a>
+              </td>
+              <td>Handler called when namespace scope starts. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><b>UriTimeout</b></td>
+              <td>Timeout for <nobr><a href="http://msdn2.microsoft.com/en-us/library/System.Net.WebRequest.GetResponse" target="_top">GetResponse</a></nobr>. (inherited from <a href="T_Kds_Xml_Expat_StdExpatParser`3.html">StdExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_UseForeignDtd.html">UseForeignDtd</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_UserData.html">UserData</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell">
+                <a href="P_Kds_Xml_Expat_ExpatParser`3_XmlDeclHandler.html">XmlDeclHandler</a>
+              </td>
+              <td>Handler for XML declarations. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+          </table>
+          <a href="#mainBody">Top</a>
+        </div>
+        <h1 class="heading">
+          <span style="cursor:default;" tabindex="0" onclick="ExpandCollapse(PublicMethodsToggle)" onkeypress="ExpandCollapse_CheckKey(PublicMethodsToggle)">
+            <img class="toggle" name="toggleSwitch" src="collapse.gif" id="PublicMethodsToggle" />Public Methods</span>
+        </h1>
+        <div class="section" name="collapseableSection" id="PublicMethodsSection">
+          <table width="100%" class="memberListTable">
+            <col width="10%" />
+            <col width="30%" />
+            <col width="60%" />
+            <tr>
+              <th style="border-right-style: none;"> </th>
+              <th align="left" style="border-left-style: none; border-right-style: none;">Name</th>
+              <th align="left" style="border-left-style: none;">Description</th>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_Kds_Xml_Expat_ExpatParser`3_Abort.html">Abort</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_Kds_Xml_Expat_ExpatParser`3_Dispose.html">Dispose</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="http://msdn2.microsoft.com/en-us/library/System.Object.Equals" target="_top">Equals</a></td>
+              <td>Determines whether the specified <nobr><a href="http://msdn2.microsoft.com/en-us/library/System.Object" target="_top">Object</a></nobr> is equal to the current <nobr><b>Object</b></nobr>. (inherited from <a href="http://msdn2.microsoft.com/en-us/library/System.Object" target="_top">Object</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_Kds_Xml_Expat_ExpatParser`3_FreeContentmodel.html">FreeContentmodel</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="http://msdn2.microsoft.com/en-us/library/System.Object.GetHashCode" target="_top">GetHashCode</a></td>
+              <td>Serves as a hash function for a particular type. <nobr><a href="http://msdn2.microsoft.com/en-us/library/System.Object.GetHashCode" target="_top">GetHashCode</a></nobr> is suitable for use in hashing algorithms and data structures like a hash table. (inherited from <a href="http://msdn2.microsoft.com/en-us/library/System.Object" target="_top">Object</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_Kds_Xml_Expat_ExpatParser`3_GetInputContext.html">GetInputContext</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="http://msdn2.microsoft.com/en-us/library/System.Object.GetType" target="_top">GetType</a></td>
+              <td>Gets the <nobr><a href="http://msdn2.microsoft.com/en-us/library/System.Type" target="_top">Type</a></nobr> of the current instance. (inherited from <a href="http://msdn2.microsoft.com/en-us/library/System.Object" target="_top">Object</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_Kds_Xml_Expat_ExpatParser`3_Parse.html">Parse</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_Kds_Xml_Expat_ExpatParser`3_Reset.html">Reset</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_Kds_Xml_Expat_ExpatParser`3_Resume.html">Resume</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_Kds_Xml_Expat_ExpatParser`3_SetDefaultHandler.html">SetDefaultHandler</a>
+              </td>
+              <td>Handler for unhandled events. (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_Kds_Xml_Expat_ExpatParser`3_SetParamEntityParsing.html">SetParamEntityParsing</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_Kds_Xml_Expat_ExpatParser`3_SetUnknownEncodingHandler.html">SetUnknownEncodingHandler</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_Kds_Xml_Expat_ExpatParser`3_Suspend.html">Suspend</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="http://msdn2.microsoft.com/en-us/library/System.Object.ToString" target="_top">ToString</a></td>
+              <td>Returns a <nobr><a href="http://msdn2.microsoft.com/en-us/library/System.String" target="_top">String</a></nobr> that represents the current <nobr><a href="http://msdn2.microsoft.com/en-us/library/System.Object" target="_top">Object</a></nobr>. (inherited from <a href="http://msdn2.microsoft.com/en-us/library/System.Object" target="_top">Object</a>)</td>
+            </tr>
+          </table>
+          <a href="#mainBody">Top</a>
+        </div>
+        <h1 class="heading">
+          <span style="cursor:default;" tabindex="0" onclick="ExpandCollapse(FamilyMethodsToggle)" onkeypress="ExpandCollapse_CheckKey(FamilyMethodsToggle)">
+            <img class="toggle" name="toggleSwitch" src="collapse.gif" id="FamilyMethodsToggle" />Protected Methods</span>
+        </h1>
+        <div class="section" name="collapseableSection" id="FamilyMethodsSection">
+          <table width="100%" class="memberListTable">
+            <col width="10%" />
+            <col width="30%" />
+            <col width="60%" />
+            <tr>
+              <th style="border-right-style: none;"> </th>
+              <th align="left" style="border-left-style: none; border-right-style: none;">Name</th>
+              <th align="left" style="border-left-style: none;">Description</th>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_Kds_Xml_Expat_ExpatParser`3_Finalize.html">Finalize</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="http://msdn2.microsoft.com/en-us/library/System.Object.MemberwiseClone" target="_top">MemberwiseClone</a></td>
+              <td>Creates a shallow copy of the current <nobr><a href="http://msdn2.microsoft.com/en-us/library/System.Object" target="_top">Object</a></nobr>. (inherited from <a href="http://msdn2.microsoft.com/en-us/library/System.Object" target="_top">Object</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_Kds_Xml_Expat_ExpatParser`3_ReAssignHandlers.html">ReAssignHandlers</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_Kds_Xml_Expat_ExpatParser`3_ReInitializeHandlers.html">ReInitializeHandlers</a>
+              </td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_ExpatParser`3.html">ExpatParser</a>)</td>
+            </tr>
+          </table>
+          <a href="#mainBody">Top</a>
+        </div>
+        <h1 class="heading">
+          <span style="cursor:default;" tabindex="0" onclick="ExpandCollapse(AssemblyMethodsToggle)" onkeypress="ExpandCollapse_CheckKey(AssemblyMethodsToggle)">
+            <img class="toggle" name="toggleSwitch" src="collapse.gif" id="AssemblyMethodsToggle" />Internal Methods</span>
+        </h1>
+        <div class="section" name="collapseableSection" id="AssemblyMethodsSection">
+          <table width="100%" class="memberListTable">
+            <col width="10%" />
+            <col width="30%" />
+            <col width="60%" />
+            <tr>
+              <th style="border-right-style: none;"> </th>
+              <th align="left" style="border-left-style: none; border-right-style: none;">Name</th>
+              <th align="left" style="border-left-style: none;">Description</th>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="intmethod.gif" alt="Assembly method" />
+              </td>
+              <td class="nameCell"><b>Resolve</b></td>
+              <td>  (inherited from <a href="T_Kds_Xml_Expat_StdExpatParser`3.html">StdExpatParser</a>)</td>
+            </tr>
+          </table>
+          <a href="#mainBody">Top</a>
+        </div>
+        <h1 class="heading">
+          <span style="cursor:default;" tabindex="0" onclick="ExpandCollapse(PublicEventsToggle)" onkeypress="ExpandCollapse_CheckKey(PublicEventsToggle)">
+            <img class="toggle" name="toggleSwitch" src="collapse.gif" id="PublicEventsToggle" />Public Events</span>
+        </h1>
+        <div class="section" name="collapseableSection" id="PublicEventsSection">
+          <table width="100%" class="memberListTable">
+            <col width="10%" />
+            <col width="30%" />
+            <col width="60%" />
+            <tr>
+              <th style="border-right-style: none;"> </th>
+              <th align="left" style="border-left-style: none; border-right-style: none;">Name</th>
+              <th align="left" style="border-left-style: none;">Description</th>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubevent.gif" alt="Public event" />
+              </td>
+              <td class="nameCell">
+                <a href="E_Kds_Xml_Expat_StdExpatParser`3_OnResolveExternalId.html">OnResolveExternalId</a>
+              </td>
+              <td>Called when an external identifier needs to be resolved to a stream. (inherited from <a href="T_Kds_Xml_Expat_StdExpatParser`3.html">StdExpatParser</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubevent.gif" alt="Public event" />
+              </td>
+              <td class="nameCell">
+                <a href="E_Kds_Xml_Expat_StdExpatParser`3_OnResolveForeignDtd.html">OnResolveForeignDtd</a>
+              </td>
+              <td>Called when an external DTD subset could be provided by the application. (inherited from <a href="T_Kds_Xml_Expat_StdExpatParser`3.html">StdExpatParser</a>)</td>
+            </tr>
+          </table>
+          <a href="#mainBody">Top</a>
+        </div>
+        <h1 class="heading">
+          <span style="cursor:default;" onclick="ExpandCollapse(seeAlsoToggle)" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle)" tabindex="0">
+            <img id="seeAlsoToggle" class="toggle" name="toggleSwitch" src="collapse.gif" />See Also</span>
+        </h1>
+        <div id="seeAlsoSection" class="section" name="collapseableSection">
+          <a href="T_Kds_Xml_Expat_StdExpatParser.html">StdExpatParser Class</a>
+          <br />
+          <a href="N_Kds_Xml_Expat.html">Kds.Xml.Expat Namespace</a>
+        </div>
+      </div>
+      <DIV CLASS="footer">
+        <p>
+          <center>
+            <font color="red">
+              <i>
+                Syntax based on .NET Framework version 2.0.<br />
+                Documentation version 2.0.0.0.
+              </i>
+            </font>
+          </center>
+        </p>
+      </DIV>
+      <hr />
+      <div id="footer">
+        <p>
+          <a href="mailto:karl@waclawek.net?subject=SAX%20for%20.NET%20Adapter%20for%20Expat%202.0.0.0%20Documentation%20Feedback:%20StdExpatParser%20Members&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;">Send comments on this topic.</a>
+        </p>
+        <p>
+          <a>2004 to 2006 Karl Waclawek</a>
+        </p>
+        <p>Generated from assembly ExpatInterop [2.0.2441.23422]</p>
+      </div><!--[if gte IE 5]><tool:tip element="membersOptionsFilterToolTip" avoidmouse="false" /><![endif]--></div>
+  </body>
+</html>

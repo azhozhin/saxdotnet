@@ -1,0 +1,46 @@
+                      HOW TO BUILD
+
+1) There is a C# build script provided - for Mono and Microsoft
+===============================================================
+
+It should work on Microsoft.NET 2.0 and Mono 1.1.17+
+ 
+Options for Build.Org.System.Xml.exe:
+- /debug ....... builds Org.System.Xml.dll with debug information
+
+The output goes to the /bin/release or /bin/debug subdirectory.
+
+In order to build without errors there is a dummy key provided
+with the file XmlKey.snk. The pre-built assemblies are signed with
+a different key, which is not included.
+
+2) Rebuilding the build script
+==============================
+
+- Windows:
+
+First, the environment must be set up so that the compiler csc
+can be found. This can be achieved by
+
+a) Downloadable Microsoft.NET Framework SDK installed:
+   calling ...\Microsoft.NET\SDK\v2.0\Bin\sdkvars.bat.
+b) Visual Studio .NET installed:
+   using the "Visual Studio .NET 2005 Command Prompt".
+Note: enclose path components with spaces in quotation marks!
+
+Then, call the C# compiler:
+
+  csc /out:Build.Org.System.Xml.exe /t:exe /r:Build.dll Build.Org.System.Xml.cs
+
+- Linux/Mono:
+
+Make sure the Mono C# compiler for .NET 2.0 - gmcs - can be found,
+then call it with the same arguments as above.
+
+3) Using Visual Studio .NET 2005
+================================
+
+The necessary solution - Org.System.Xml.sln - and project file are included.
+
+ 
+

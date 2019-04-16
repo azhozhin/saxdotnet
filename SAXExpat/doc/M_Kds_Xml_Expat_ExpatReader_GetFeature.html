@@ -1,0 +1,147 @@
+<html dir="LTR" xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:tool="http://www.microsoft.com/tooltip" xmlns:ndoc="urn:ndoc-preprocess">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <title>GetFeature Method</title>
+    <link rel="stylesheet" type="text/css" href="ndoc.css"> </link>
+    <link rel="stylesheet" type="text/css" href="user.css"> </link>
+    <script type="text/javascript" src="ndoc.js"> </script>
+  </head>
+  <body style="display: none;">
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+    <img id="dropDownImage" style="display:none; height:0; width:0;" src="drpdown.gif" />
+    <img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="drpdown_orange.gif" />
+    <img id="collapseImage" style="display:none; height:0; width:0;" src="collapse.gif" />
+    <img id="expandImage" style="display:none; height:0; width:0;" src="exp.gif" />
+    <img id="collapseAllImage" style="display:none; height:0; width:0;" src="collall.gif" />
+    <img id="expandAllImage" style="display:none; height:0; width:0;" src="expall.gif" />
+    <img id="copyImage" style="display:none; height:0; width:0;" src="copycode.gif" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="copycodeHighlight.gif" />
+    <div id="header">
+      <table width="100%" id="topTable">
+        <tr id="headerTableRow1">
+          <td align="left">
+            <span id="runningHeaderText">SAX for .NET Adapter for Expat</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow2">
+          <td align="left">
+            <span id="nsrTitle">ExpatReader.GetFeature Method</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow3">
+          <td>
+            <a id="seeAlsoSectionLink" href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a>
+            <a id="exampleSectionLink" href="#codeExampleToggle" onclick="OpenSection(codeExampleToggle)">Example</a>
+          </td>
+        </tr>
+      </table>
+      <table width="100%" id="bottomTable" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage)" tabindex="0">
+              <img ID="toggleAllImage" class="toggleAll" src="collall.gif" />
+              <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">
+							Collapse All
+						</label>
+              <label id="expandAllLabel" for="toggleAllImage" style="display: none;">
+							Expand All
+						</label>
+            </span>
+            <span id="languageFilterToolTip" style="cursor:default;" onmouseover="languageFilterImage.src=dropDownHoverImage.src;" onfocusin="languageFilterImage.src=dropDownHoverImage.src;" onmouseout="languageFilterImage.src=dropDownImage.src;" onfocusout="languageFilterImage.src=dropDownImage.src;" tabindex="0">
+              <img id="languageFilterImage" src="drpdown.gif" />
+              <label id="showAllLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: All
+			</label>
+              <label id="multipleLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: Multiple
+			</label>
+              <label id="vbLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: Visual Basic
+			</label>
+              <label id="csLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: C#
+			</label>
+              <label id="cLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: C++
+			</label>
+              <label id="jsharpLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: J#
+			</label>
+              <label id="jsLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: JScript
+			</label>
+            </span>
+          </td>
+        </tr>
+      </table>
+      <span style="display:none" id="languageSpan">
+        <input id="vbDeclarationCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="vbDeclarationCheckbox">
+				Visual Basic (Declaration)
+			</label>
+        <br />
+        <input id="vbUsageCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="vbUsageCheckbox">
+				Visual Basic (Usage)
+			</label>
+        <br />
+        <input id="csCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="csCheckbox">
+				C#
+			</label>
+        <br />
+        <input id="cCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="cCheckbox">
+				C++
+			</label>
+        <br />
+        <input id="jsharpCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="jsharpCheckbox">
+				J#
+			</label>
+        <br />
+        <input id="jsCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="jsCheckbox">
+				JScript
+			</label>
+        <br />
+      </span>
+    </div>
+    <div id="mainSection">
+      <div id="mainBody">
+        <div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+        <p>Returns if named feature is turned on or not.</p>
+        <br />
+        <b>Namespace: </b>
+        <a href="N_Kds_Xml_Expat.html">Kds.Xml.Expat</a>
+        <br />
+        <b>Assembly: </b>SaxExpat (in SaxExpat.dll)
+		<br /><h1 class="heading"><span onclick="ExpandCollapse(syntaxToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(syntaxToggle)" tabindex="0"><img id="syntaxToggle" class="toggle" name="toggleSwitch" src="collapse.gif" />Syntax</span></h1><div id="syntaxSection" class="section" name="collapseableSection"><div id="syntaxCodeBlocks" class="code"><span codeLanguage="VisualBasicDeclaration"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">Visual Basic (Declaration)</th></tr><tr><td class="syntax">Public Function GetFeature( _ <br />   ByVal name As <a href="http://msdn2.microsoft.com/en-us/library/System.String" target="_top">String</a> _ <br />) As <a href="http://msdn2.microsoft.com/en-us/library/System.Boolean" target="_top">Boolean</a> _<br />    Implements <b>IXmlReader.GetFeature</b></td></tr></table></span><span codeLanguage="CSharp"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">C#</th></tr><tr><td class="syntax">public <a href="http://msdn2.microsoft.com/en-us/library/System.Boolean" target="_top">bool</a> GetFeature(<br />   <a href="http://msdn2.microsoft.com/en-us/library/System.String" target="_top">string</a> name<br />)</td></tr></table></span><span codeLanguage="ManagedCPlusPlus"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">C++</th></tr><tr><td class="syntax">public:<br /> <a href="http://msdn2.microsoft.com/en-us/library/System.Boolean" target="_top">bool</a> GetFeature(<br />   <a href="http://msdn2.microsoft.com/en-us/library/System.String" target="_top">String</a> name<br />) sealed </td></tr></table></span><span codeLanguage="JSharp"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">J#</th></tr><tr><td class="syntax">public <a href="http://msdn2.microsoft.com/en-us/library/System.Boolean" target="_top">bool</a> GetFeature(<br />   <a href="http://msdn2.microsoft.com/en-us/library/System.String" target="_top">string</a> name<br />)</td></tr></table></span><span codeLanguage="JScript"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">JScript</th></tr><tr><td class="syntax">public 
+				function GetFeature(<br />   name : <a href="http://msdn2.microsoft.com/en-us/library/System.String" target="_top">String</a><br />) : <a href="http://msdn2.microsoft.com/en-us/library/System.Boolean" target="_top">bool</a></td></tr></table></span></div><h4 class="subHeading">
+          Implements
+        </h4><b>IXmlReader.GetFeature</b></div><h1 class="heading"><span style="cursor:default;" onclick="ExpandCollapse(remarksDataToggle)" onkeypress="ExpandCollapse_CheckKey(remarksDataToggle)" tabindex="0"><img id="remarksDataToggle" class="toggle" name="toggleSwitch" src="collapse.gif" />Remarks</span></h1><div id="remarksDataSection" class="section" name="collapseableSection"><p>Supported features are: <table width="100%"><tr valign="top"> Standard features - prefixed with "http://xml.org/sax/features/" <th align="left">Name</th><th align="left">Properties</th></tr><tr valign="top"><td>namespaces</td><td> Access: read/write, default true.<br /> Should be set *before* parsing is started. If set later, it will only affect the reporting of QNames, that is, if namespaces was true at the beginning, then QName/Prefix reporting can be turned off during parsing, but namespace processing will stay active. </td></tr><tr valign="top"><td>namespace-prefixes</td><td> Access: read-only, value depends on namespaces feature.<br /> The underlying Expat parser never reports xmlns attributes when namespace processing is turned on, so this feature is set to false in this case even though prefixes (in QNames) would still be reported. Conversely, when namespace processing is turned off then this feature is automatically set to true. </td></tr><tr valign="top"><td>validation</td><td> Access: read/write, fixed false. </td></tr><tr valign="top"><td>external-general-entities</td><td> Access: read/write, default false. </td></tr><tr valign="top"><td>external-parameter-entities</td><td> Access: read/write, default false. </td></tr><tr valign="top"><td>resolve-dtd-uris</td><td> Access: read/write, default false. </td></tr><tr valign="top"><td>lexical-handler/parameter-entities</td><td> Access: read/write, default true.<br /> With limitations - See remarks regarding internal entities and <nobr><b>ILexicalHandler</b></nobr> on <nobr><a href="T_Kds_Xml_Expat_ExpatReader.html">ExpatReader</a></nobr>. It is not certain that the way this feature is implemented conforms to SAX2, but it works the same way as in MSXML4. It seems that if it is turned off then parameter entities should still be reported if skipped, but this is not done here since internally this feature is equivalent to the parameter-entities extension feature which turns parameter entity parsing on or off. </td></tr><tr valign="top"><td>xmlns-uris</td><td> Access: read/write, fixed false.<br /></td></tr><tr valign="top"><td>xml-1.1</td><td> Access: read-only, fixed false.<br /></td></tr><tr valign="top"><td>unicode-normalization-checking</td><td> Access: read/write, fixed false.<br /></td></tr><tr valign="top"><td>xml-declaration</td><td> Access: read-only, fixed true.<br /></td></tr><tr valign="top"><td>use-external-subset</td><td> Access: read-only, fixed true.<br /></td></tr><tr valign="top"><td>reader-control</td><td> Access: read-only, default depends on compile options.<br /> Returns if the Suspend()/Resume() functionality is implemented. This is true when compiled with EXPAT_1_95_8_UP defined and version 1.95.8 (or later) of the Expat library is used. </td></tr></table><table width="100%"><tr valign="top"> Extension features - prefixed with "http://kd-soft.net/sax/features/" <th align="left">Name</th><th align="left">Properties</th></tr><tr valign="top"><td>parameter-entities</td><td> Access: read/write, default true.<br /> Turns parameter entity parsing on or off. This affects all of the external subset, as well as parameter entities in the internal subset. The rest of the internal subset is still being processed. </td></tr><tr valign="top"><td>skip-internal-entities</td><td> Access: read/write, default false.<br /> Skip or (silently) expand internal entities (parameter and general). </td></tr><tr valign="top"><td>parse-unless-standalone</td><td> Access: read/write, default false.<br /> When turned on external parameter entities will not be parsed if the XML declaration specifies standalone = "yes". </td></tr><tr valign="top"><td>standalone-error</td><td> Access: read/write, default false.<br /> Determines if the parser returns an error, when it encounters an external subset or a reference to a parameter entity, but the document has standalone="yes" in the XML declaration. </td></tr></table><p> Note: "read/write, fixed false" means that the feature can be set, but only to the value false, otherwise an exception will be thrown. </p></p></div><h1 class="heading"><span style="cursor:default;" onclick="ExpandCollapse(seeAlsoToggle)" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle)" tabindex="0"><img id="seeAlsoToggle" class="toggle" name="toggleSwitch" src="collapse.gif" />See Also</span></h1><div id="seeAlsoSection" class="section" name="collapseableSection"><a href="T_Kds_Xml_Expat_ExpatReader.html">ExpatReader Class</a><br /><a href="N_Kds_Xml_Expat.html">Kds.Xml.Expat Namespace</a></div></div>
+      <DIV CLASS="footer">
+        <p>
+          <center>
+            <font color="red">
+              <i>
+                Syntax based on .NET Framework version 2.0.<br />
+                Documentation version 2.0.0.0.
+              </i>
+            </font>
+          </center>
+        </p>
+      </DIV>
+      <hr />
+      <div id="footer">
+        <p>
+          <a href="mailto:karl@waclawek.net?subject=SAX%20for%20.NET%20Adapter%20for%20Expat%202.0.0.0%20Documentation%20Feedback:%20ExpatReader.GetFeature%20Method">Send comments on this topic.</a>
+        </p>
+        <p>
+          <a>2004 to 2006 Karl Waclawek</a>
+        </p>
+        <p>Generated from assembly SaxExpat [2.0.2441.23423]</p>
+      </div><!--[if gte IE 5]><tool:tip element="languageFilterToolTip" avoidmouse="false" /><![endif]--></div>
+  </body>
+</html>

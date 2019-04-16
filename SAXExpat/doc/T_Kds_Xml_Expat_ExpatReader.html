@@ -1,0 +1,145 @@
+<html dir="LTR" xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:tool="http://www.microsoft.com/tooltip" xmlns:ndoc="urn:ndoc-preprocess">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <title>ExpatReader Class</title>
+    <link rel="stylesheet" type="text/css" href="ndoc.css"> </link>
+    <link rel="stylesheet" type="text/css" href="user.css"> </link>
+    <script type="text/javascript" src="ndoc.js"> </script>
+  </head>
+  <body style="display: none;">
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+    <img id="dropDownImage" style="display:none; height:0; width:0;" src="drpdown.gif" />
+    <img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="drpdown_orange.gif" />
+    <img id="collapseImage" style="display:none; height:0; width:0;" src="collapse.gif" />
+    <img id="expandImage" style="display:none; height:0; width:0;" src="exp.gif" />
+    <img id="collapseAllImage" style="display:none; height:0; width:0;" src="collall.gif" />
+    <img id="expandAllImage" style="display:none; height:0; width:0;" src="expall.gif" />
+    <img id="copyImage" style="display:none; height:0; width:0;" src="copycode.gif" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="copycodeHighlight.gif" />
+    <div id="header">
+      <table width="100%" id="topTable">
+        <tr id="headerTableRow1">
+          <td align="left">
+            <span id="runningHeaderText">SAX for .NET Adapter for Expat</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow2">
+          <td align="left">
+            <span id="nsrTitle">ExpatReader Class</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow3">
+          <td>
+            <a id="seeAlsoSectionLink" href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a>
+            <a id="exampleSectionLink" href="#codeExampleToggle" onclick="OpenSection(codeExampleToggle)">Example</a>
+            <a href="T_Kds_Xml_Expat_ExpatReader_Members.html">Members</a>
+          </td>
+        </tr>
+      </table>
+      <table width="100%" id="bottomTable" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage)" tabindex="0">
+              <img ID="toggleAllImage" class="toggleAll" src="collall.gif" />
+              <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">
+							Collapse All
+						</label>
+              <label id="expandAllLabel" for="toggleAllImage" style="display: none;">
+							Expand All
+						</label>
+            </span>
+            <span id="languageFilterToolTip" style="cursor:default;" onmouseover="languageFilterImage.src=dropDownHoverImage.src;" onfocusin="languageFilterImage.src=dropDownHoverImage.src;" onmouseout="languageFilterImage.src=dropDownImage.src;" onfocusout="languageFilterImage.src=dropDownImage.src;" tabindex="0">
+              <img id="languageFilterImage" src="drpdown.gif" />
+              <label id="showAllLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: All
+			</label>
+              <label id="multipleLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: Multiple
+			</label>
+              <label id="vbLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: Visual Basic
+			</label>
+              <label id="csLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: C#
+			</label>
+              <label id="cLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: C++
+			</label>
+              <label id="jsharpLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: J#
+			</label>
+              <label id="jsLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: JScript
+			</label>
+            </span>
+          </td>
+        </tr>
+      </table>
+      <span style="display:none" id="languageSpan">
+        <input id="vbDeclarationCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="vbDeclarationCheckbox">
+				Visual Basic (Declaration)
+			</label>
+        <br />
+        <input id="vbUsageCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="vbUsageCheckbox">
+				Visual Basic (Usage)
+			</label>
+        <br />
+        <input id="csCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="csCheckbox">
+				C#
+			</label>
+        <br />
+        <input id="cCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="cCheckbox">
+				C++
+			</label>
+        <br />
+        <input id="jsharpCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="jsharpCheckbox">
+				J#
+			</label>
+        <br />
+        <input id="jsCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="jsCheckbox">
+				JScript
+			</label>
+        <br />
+      </span>
+    </div>
+    <div id="mainSection">
+      <div id="mainBody">
+        <div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+        <p>Wrapper class that exposes the (unmanaged) Expat XML parser through the <nobr><b>IXmlReader</b></nobr> interface.</p>
+        <br />
+        <b>Namespace: </b>
+        <a href="N_Kds_Xml_Expat.html">Kds.Xml.Expat</a>
+        <br />
+        <b>Assembly: </b>SaxExpat (in SaxExpat.dll)
+		<br /><h1 class="heading"><span onclick="ExpandCollapse(syntaxToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(syntaxToggle)" tabindex="0"><img id="syntaxToggle" class="toggle" name="toggleSwitch" src="collapse.gif" />Syntax</span></h1><div id="syntaxSection" class="section" name="collapseableSection"><div id="syntaxCodeBlocks" class="code"><span codeLanguage="VisualBasicDeclaration"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">Visual Basic (Declaration)</th></tr><tr><td class="syntax">Public Class ExpatReader<br />    Implements <b>IXmlReader</b>, <a href="http://msdn2.microsoft.com/en-us/library/System.IDisposable" target="_top">IDisposable</a></td></tr></table></span><span codeLanguage="CSharp"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">C#</th></tr><tr><td class="syntax">public class ExpatReader : <b>IXmlReader</b>, <a href="http://msdn2.microsoft.com/en-us/library/System.IDisposable" target="_top">IDisposable</a></td></tr></table></span><span codeLanguage="ManagedCPlusPlus"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">C++</th></tr><tr><td class="syntax">ref class ExpatReader : <b>IXmlReader</b>, <a href="http://msdn2.microsoft.com/en-us/library/System.IDisposable" target="_top">IDisposable</a></td></tr></table></span><span codeLanguage="JSharp"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">J#</th></tr><tr><td class="syntax">public class ExpatReader implements <b>IXmlReader</b>, <a href="http://msdn2.microsoft.com/en-us/library/System.IDisposable" target="_top">IDisposable</a></td></tr></table></span><span codeLanguage="JScript"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">JScript</th></tr><tr><td class="syntax">public class ExpatReader extends <b>IXmlReader</b>, <a href="http://msdn2.microsoft.com/en-us/library/System.IDisposable" target="_top">IDisposable</a></td></tr></table></span></div></div><h1 class="heading"><span style="cursor:default;" onclick="ExpandCollapse(remarksDataToggle)" onkeypress="ExpandCollapse_CheckKey(remarksDataToggle)" tabindex="0"><img id="remarksDataToggle" class="toggle" name="toggleSwitch" src="collapse.gif" />Remarks</span></h1><div id="remarksDataSection" class="section" name="collapseableSection"><p><ul type="disc"><li>Works only with Expat 1.95.7 and later. To enable the features of a later version, specific conditional compile symbols must be defined. Currently the symbols EXPAT_1_95_8_UP and EXPAT_2_0_UP are recognized. EXPAT_1_95_8_UP enables the suspend/resume functionality introduced with Expat 1.95.8. EXPAT_2_0_UP enables 64-bit values for line- and column numbers. This requires that Expat 2.0 is compiled with XML_LARGE_SIZE defined. </li><li>By casting the usual <nobr><b>IXmlReader</b></nobr> interface reference to <code><nobr>ExpatReader</nobr></code> one can gain access to some Expat specific functionality, and also to the currently active Expat parser instance, so that the functions exported by the Dll can be called directly (see Expat.cs).</li><li>SAX Features and Properties: <code><nobr>ExpatReader</nobr></code> also exposes Features and Properties directly as public properties for more efficient access. </li><li>Input sources: <code><nobr>ExpatReader</nobr></code> can currently only use <nobr><b>InputSource</b></nobr>, <nobr><b>InputSource</b></nobr> and <nobr><b>InputSource</b></nobr> instances.</li><li>No Validation: <code><nobr>ExpatReader</nobr></code> processes and reports all DTD declarations but does not validate against them. However, attribute values are defaulted and entity references are replaced.</li><li><nobr><b>IgnorableWhitespace</b></nobr> will not be called because the parser is non-validating. Such white space will be reported as character data.</li><li>The <nobr><b>Suspend</b></nobr> function will not work while an external parameter entity is being parsed. It will silently fail, that is, one should check the <nobr><b>Status</b></nobr> property immediately afterwards. Other events where it will fail silently are <nobr><b>EndDocument</b></nobr> and <nobr><b>EndEntity</b></nobr>, even if correctly called when <nobr><b>Status</b></nobr> = <nobr><b>Parsing</b></nobr>.</li><li>"http://xml.org/sax/features/namespace-prefixes" feature: When this feature is turned on, xmlns attributes (namespace declarations) are to be reported like regular attributes, in addition to being reported through the <nobr><b>StartPrefixMapping</b></nobr> or <nobr><b>EndPrefixMapping</b></nobr> events. However, the underlying Expat parser never reports xmlns attributes when namespace processing is turned on, so this feature will have the value <code><nobr>false</nobr></code> in this case. Conversely, it will assume the value <code><nobr>true</nobr></code> when namespace processing is turned off. This is automatically enforced when setting the namespaces feature. Trying to set the namespace-prefixes feature to a value conflicting with the namespaces feature will throw an exception.</li><li><nobr><b>StartDocument</b></nobr> and <nobr><b>EndDocument</b></nobr> call-backs: Once <nobr><b>StartDocument</b></nobr> was called, <nobr><b>EndDocument</b></nobr> will be called as well, even after a fatal error, or when an exception was raised, or when parsing was aborted by calling <nobr><b>Abort</b></nobr>. If <nobr><b>StartDocument</b></nobr> was not called, <nobr><b>EndDocument</b></nobr> will not be called either. This is independent of whether a content handler was assigned or not, so it should maybe read: "Once StartDocument() would have been called, ...". </li><li>This is how entities are reported: <table width="100%"><tr valign="top">We use these shorthand terms:</tr><tr valign="top">ExternalGeneral = external-general-entities feature.</tr><tr valign="top">LexicalParameter = lexical-handler/parameter-entities feature.</tr><tr valign="top">SkipInternal = skip-internal-entities feature.</tr></table><table width="100%"><tr valign="top">External General Entities:</tr><tr valign="top"><td>ExternalGeneral = True.</td><td><nobr><b>StartEntity</b></nobr> and <nobr><b>EndEntity</b></nobr> are called.</td></tr><tr valign="top"><td>ExternalGeneral = False.</td><td><nobr><b>SkippedEntity</b></nobr> is called.</td></tr></table><table width="100%"><tr valign="top"> External Parameter Entities - LexicalParameter = True: </tr><tr valign="top"><td>ExternalParameter = True.</td><td><nobr><b>StartEntity</b></nobr> and <nobr><b>EndEntity</b></nobr> are called.</td></tr><tr valign="top"><td>ExternalParameter = False.</td><td><nobr><b>SkippedEntity</b></nobr> is called.</td></tr></table><table width="100%"><tr valign="top"> External Parameter Entities - LexicalParameter = False: </tr><tr valign="top">No calls, external parameter entities are silently ignored.</tr></table><table width="100%"><tr valign="top"> Internal Entities - LexicalParameter = True: </tr><tr valign="top"><td>SkipInternal = True.</td><td><nobr><b>SkippedEntity</b></nobr> is called.</td></tr><tr valign="top"><td>SkipInternal = False.</td><td>No calls, entities silently expanded.</td></tr></table><table width="100%"><tr valign="top"> Internal Entities - LexicalParameter = False: </tr><tr valign="top"> Parameter entities are not parsed, i.e. silently ignored. </tr></table></li><li><nobr><b>ILexicalHandler</b></nobr>, internal entities: The <nobr><b>StartEntity</b></nobr> and <nobr><b>EndEntity</b></nobr> methods are only called for external entities, internal entities are not reported (except when skipped). There is the XML_GetCurrentByteCount() function in the Expat library which returns 0 if the current call-back is triggered from inside an internal entity - which could be useful.</li></ul></p></div><h1 class="heading"><span style="cursor:default;" onclick="ExpandCollapse(inheritanceHierarchyToggle)" onkeypress="ExpandCollapse_CheckKey(inheritanceHierarchyToggle)" tabindex="0"><img id="inheritanceHierarchyToggle" class="toggle" name="toggleSwitch" src="collapse.gif" />Inheritance Hierarchy</span></h1><div id="inheritanceHierarchySection" class="section" name="collapseableSection"><a href="http://msdn2.microsoft.com/en-us/library/System.Object" target="_top">System.Object</a><br />   <b>Kds.Xml.Expat.ExpatReader</b></div><h1 class="heading"><span style="cursor:default;" onclick="ExpandCollapse(threadSafetyToggle)" onkeypress="ExpandCollapse_CheckKey(threadSafetyToggle)" tabindex="0"><img id="threadSafetyToggle" class="toggle" name="toggleSwitch" src="collapse.gif" />Thread Safety</span></h1><div id="threadSafetySection" class="section" name="collapseableSection">Public <span codeLanguage="VisualBasicAndAnother">static (<b>Shared</b> in Visual Basic)</span><span codeLanguage="AnyButVisualBasic">static</span><span codeLanguage="OnlyVisualBasic"><b>Shared</b></span> members of this type are safe for multithreaded operations. Instance members are <b>not</b> guaranteed to be thread-safe. </div><h1 class="heading"><span style="cursor:default;" onclick="ExpandCollapse(seeAlsoToggle)" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle)" tabindex="0"><img id="seeAlsoToggle" class="toggle" name="toggleSwitch" src="collapse.gif" />See Also</span></h1><div id="seeAlsoSection" class="section" name="collapseableSection"><a href="T_Kds_Xml_Expat_ExpatReader_Members.html">ExpatReader Members</a><br /><a href="N_Kds_Xml_Expat.html">Kds.Xml.Expat Namespace</a></div></div>
+      <DIV CLASS="footer">
+        <p>
+          <center>
+            <font color="red">
+              <i>
+                Syntax based on .NET Framework version 2.0.<br />
+                Documentation version 2.0.0.0.
+              </i>
+            </font>
+          </center>
+        </p>
+      </DIV>
+      <hr />
+      <div id="footer">
+        <p>
+          <a href="mailto:karl@waclawek.net?subject=SAX%20for%20.NET%20Adapter%20for%20Expat%202.0.0.0%20Documentation%20Feedback:%20ExpatReader%20Class">Send comments on this topic.</a>
+        </p>
+        <p>
+          <a>2004 to 2006 Karl Waclawek</a>
+        </p>
+        <p>Generated from assembly SaxExpat [2.0.2441.23423]</p>
+      </div><!--[if gte IE 5]><tool:tip element="languageFilterToolTip" avoidmouse="false" /><![endif]--></div>
+  </body>
+</html>

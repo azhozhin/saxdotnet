@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sax", "Sax.csproj", "{A05D2163-80FF-4AEA-B23D-1C9715A306AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A05D2163-80FF-4AEA-B23D-1C9715A306AF}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{A05D2163-80FF-4AEA-B23D-1C9715A306AF}.Debug|Default.Build.0 = Debug|Any CPU
+		{A05D2163-80FF-4AEA-B23D-1C9715A306AF}.Release|Default.ActiveCfg = Release|Any CPU
+		{A05D2163-80FF-4AEA-B23D-1C9715A306AF}.Release|Default.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

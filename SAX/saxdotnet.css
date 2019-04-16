@@ -1,0 +1,110 @@
+h1 {
+  color: maroon;
+  margin-top: 8px;
+  width: 560px;
+}
+
+h2 {
+  color: maroon;
+  margin-top: 24px;
+  width: 560px;
+}
+
+h3 {
+  color: maroon;
+  width: 560px;
+}
+
+h4 {
+  margin-top: 32px;
+  color: maroon;
+  width: 560px;
+}
+
+div {
+  width: 560px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+p {
+  width: 560px;
+}
+
+body {
+  color: black;
+  background-color: #eeeeff;
+  margin-left: 12px;
+}
+
+dl {
+  color: black;
+  width: 560px;
+}
+
+dt {
+  font-weight: bold;
+  color: maroon;
+}
+
+dd {
+  width: 560px;
+}
+
+a:link {
+  color: blue;
+}
+a:visited {
+  color: blue;
+}
+a:hover {
+  color: maroon;
+}
+
+table {
+  width: 560px;
+}
+
+td.header {
+  background-color: maroon;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+td.empty {
+  background-color: #eeeeff;
+}
+
+td {
+  vertical-align: top;
+}
+
+td.rowheader {
+  font-weight: bold;
+  color: maroon;
+}
+
+hr {
+  margin-left: 100px;
+  width: 360px;
+  text-align: left;
+}
+
+.sc {
+  font-variant: small-caps;
+  font-weight: normal;
+}
+
+.name {
+  color: maroon;
+  font-weight: bold;
+}
+
+pre {
+  color: maroon;
+}
+
+code {
+  color: maroon;
+}

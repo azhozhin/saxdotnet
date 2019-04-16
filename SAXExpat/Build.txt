@@ -1,0 +1,49 @@
+                     HOW TO BUILD SAXEXPAT 2.0
+
+1) There is a C# build script provided: Build.SaxExpat.exe
+==========================================================
+
+This works under Microsoft.NET 2.0 and should work under 
+the corresponding Mono release once it fully supports .NET 2.0..
+ 
+Commmand line parameters for Build.SaxExpat.exe:
+- <none> ....... builds SaxExpat.dll and all assemblies it depends on
+- /debug ....... builds the above with debug information
+
+The output goes to the /bin/release or /bin/debug subdirectory
+of the respective project directories.
+
+In order to build without errors there is a dummy key provided
+with the file SaxExpatKey.snk. The pre-built assemblies are signed with
+a different key, which is not included.
+
+
+2) Rebuilding the build script
+==============================
+
+- Windows/MS.NET:
+
+  csc /out:Build.SaxExpat.exe /t:exe /r:Build.dll Build.SaxExpat.cs
+
+- Linux/Mono:
+
+  gmcs /out:Build.SaxExpat.exe /t:exe /r:Build.dll Build.SaxExpat.cs
+
+
+3) Using Visual Studio .NET 2005
+================================
+
+The necessary solution - SaxExpat.sln - and project files are included.
+
+
+4) Dependency on Sax.dll
+========================
+
+SAXExpat depends on Sax.dll version 2.0, a copy of which is included
+in the SAXExpat root directory, and all the build methods above depend
+on this specific copy and location. If you want to rebuild SAXExpat based
+on Sax.dll installed in the GAC, then these build methods need to be modified
+accordingly.
+
+ 
+

@@ -1,0 +1,54 @@
+                     HOW TO BUILD AELFRED 2.0
+
+1) There is a C# build script provided - for Mono and Microsoft
+===============================================================
+
+It should work on Microsoft.NET 2.0 and Mono 1.1.17+.
+ 
+Options for Build.AElfred.exe:
+- /debug ....... builds AElfred.dll with debug information
+
+The output goes to the /bin/release or /bin/debug subdirectory.
+
+
+2) Rebuilding the build script
+==============================
+
+- Windows:
+
+First, open a command prompt and set up the environment
+by running:
+a) Downloadable Microsoft.NET Framework SDK installed:
+   ...\Microsoft.NET\SDK\v2.0\Bin\sdkvars.bat
+b) Visual Studio .NET 2005 installed:
+   simply use the "Visual Studio .NET 2005 Command Prompt".
+Note: enclose path components with spaces in quotation marks!
+
+Then, call the C# compiler:
+
+  csc /out:Build.AElfred.exe /t:exe /r:Build.dll Build.AElfred.cs
+
+- Linux/Mono:
+
+Make sure the Mono C# compiler for .NET 2.0 - gmcs - can be found,
+then call it with the same arguments as above.
+
+
+3) Using Visual Studio .NET 2005
+================================
+
+The necessary solution - AElfred.sln - and project file are included.
+
+
+4) Dependency on Sax.dll
+========================
+
+AElfred depends on Sax.dll version 2.0, a copy of which is included
+in the AElfred root directory, and all the build methods above depend
+on this specific copy and location. If you want to rebuild AElfred based
+on Sax.dll installed in the GAC, then these build methods need to be modified
+accordingly.
+
+
+ 
+

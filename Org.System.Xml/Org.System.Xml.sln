@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C# Express 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Org.System.Xml", "Org.System.Xml.csproj", "{DD083E56-281D-4B52-AA6E-F50CBEE5B56F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD083E56-281D-4B52-AA6E-F50CBEE5B56F}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{DD083E56-281D-4B52-AA6E-F50CBEE5B56F}.Debug|Default.Build.0 = Debug|Any CPU
+		{DD083E56-281D-4B52-AA6E-F50CBEE5B56F}.Release|Default.ActiveCfg = Release|Any CPU
+		{DD083E56-281D-4B52-AA6E-F50CBEE5B56F}.Release|Default.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

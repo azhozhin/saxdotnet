@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conformance", "Conformance\Conformance.csproj", "{9E6F4FDC-B91C-4494-BCF2-8A81D70F114F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Treeview", "Treeview\Treeview.csproj", "{A0780D05-9D0C-49B2-8D31-5C27FD0EB573}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E6F4FDC-B91C-4494-BCF2-8A81D70F114F}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{9E6F4FDC-B91C-4494-BCF2-8A81D70F114F}.Debug|Default.Build.0 = Debug|Any CPU
+		{9E6F4FDC-B91C-4494-BCF2-8A81D70F114F}.Release|Default.ActiveCfg = Release|Any CPU
+		{9E6F4FDC-B91C-4494-BCF2-8A81D70F114F}.Release|Default.Build.0 = Release|Any CPU
+		{A0780D05-9D0C-49B2-8D31-5C27FD0EB573}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{A0780D05-9D0C-49B2-8D31-5C27FD0EB573}.Debug|Default.Build.0 = Debug|Any CPU
+		{A0780D05-9D0C-49B2-8D31-5C27FD0EB573}.Release|Default.ActiveCfg = Release|Any CPU
+		{A0780D05-9D0C-49B2-8D31-5C27FD0EB573}.Release|Default.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

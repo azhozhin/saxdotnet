@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="nl">
+  <head>
+    <link rel="stylesheet" type="text/css" href="saxdotnet.css" />
+    <title>SAX for .NET</title>
+    <meta name="Author" content="SAXdotNET @ SourceForge.net" />
+    <meta name="Keywords" content="SAX,.NET,C#,XML,CSharp,DotNet,SAXDotNet" />
+    <meta name="Description" content="SAX for .NET is the C# port of the Simple API for XML Parsing interfaces." />
+    <meta name="robots" content="index,follow" />
+  </head>
+  <body>
+    <h2>How to parse an XML document with SAX for .NET</h2>
+      This is a demonstration of the most basic steps required to process
+      an XML document with SAX for .NET. To get a deeper understanding
+      and explore more of the features, it is recommended to have a look
+      at the demo applications.
+    <h3>First Step: Which assemblies & namespaces do we need?</h3>
+      The main assembly is Sax.dll, and it is a good idea to have it
+      installed in the GAC. For the namespaces add these statements:
+      <code><pre>
+      using Org.System.Xml.Sax;
+      using Org.System.Xml.Sax.Helpers;
+      using System.Reflection;
+      </pre></code>
+    <h3>Second Step: Implement the <code>IContentHandler</code> interface.</h3>
+      This class allows you to process the XML document's content.
+      It is simpler to derive from <code>DefaultHandler</code>, as it already
+      provides "no-op" implementations of all interface methods and one only
+      needs to override those actually used. The example below determines the
+      maximum nesting depth of an XML document and counts its characters.
+      <code><pre>
+      public class MyHandler: DefaultHandler
+      {
+        private int level = 0;
+        private int depth = 0;
+        private int charCount = 0;
+        
+        public int Depth
+        {
+          get { return depth; }
+        }
+        
+        public int CharCount
+        {
+          get { return charCount; }
+        }
+
+        public override void StartElement(
+          string uri,
+          string localName,
+          string qName,
+          IAttributes atts)
+        {
+          level++;
+          if (level > depth)
+            depth = level;
+        }
+
+        public override void EndElement(string uri, string localName, string qName)
+        {
+          level--;
+        }
+
+        public override void Characters(char[] ch, int start, int length)
+        {
+          charCount = charCount + length;
+        }
+      }
+      </pre></code>
+    <h3>Third Step: Configure and use the SAX parser.</h3>
+    We assume the assembly is located at <i>F:\MyLibs\SAXExpat\SAXExpat.dll</i>
+    and the document we want to parse can be found at <i>C:\My Documents\Test.xml</i>.
+    <code><pre>
+    // load the SAX parser assembly
+    Assembly assem = Assembly.LoadFrom(@"F:\MyLibs\SAXExpat\SAXExpat.dll");
+    IXmlReader reader = SaxReaderFactory.CreateReader(assem, null);
+    // set one or more handlers
+    MyHandler handler = new MyHandler();
+    reader.ContentHandler = handler;
+    // you could set other properties and features now
+    reader.Parse(@"file:///C:\My Documents\Test.xml");
+    string msg = "Document depth: {0}\n Character count: {1}";
+    MessageBox.Show(String.Format(msg, handler.Depth, handler.CharCount));
+    </pre></code>
+    Alternate choices in the code above could have been to instantiate
+    the <code>IXmlReader</code> directly via constructor, or to pass an
+	<code>InputSource</code> object to the <code>reader.Parse()</code>
+	method instead of an URL.
+  </body>
+</html>

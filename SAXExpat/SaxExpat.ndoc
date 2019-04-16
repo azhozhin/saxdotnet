@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<project SchemaVersion="2.0">
+    <assemblies>
+        <assembly location=".\SAXExpat\bin\Release\SaxExpat.dll" documentation=".\SAXExpat\bin\Release\SaxExpat.xml" />
+        <assembly location=".\SAX\bin\Release\KdsSax.dll" documentation=".\SAX\bin\Release\KdsSax.xml" />
+        <assembly location=".\Util\Text\bin\Release\KdsText.dll" documentation=".\Util\Text\bin\Release\KdsText.xml" />
+        <assembly location=".\ExpatInterop\bin\Release\ExpatInterop.dll" documentation=".\ExpatInterop\bin\Release\ExpatInterop.xml" />
+    </assemblies>
+    <documenters>
+        <documenter name="MSDN-Help2">
+            <property name="PlugInNamespace" value="ms.vscc" />
+            <property name="OutputDirectory" value=".\doc\" />
+            <property name="HtmlHelpName" value="Documentation" />
+            <property name="Title" value="An NDoc documented library" />
+        </documenter>
+        <documenter name="MSDN-CHM">
+            <property name="OutputDirectory" value=".\doc\" />
+            <property name="HtmlHelpName" value="SAXExpat.NET" />
+            <property name="Title" value="SAX for .NET Adapter for Expat" />
+            <property name="Version" value="2.0.0.0" />
+            <property name="DocumentInternals" value="True" />
+            <property name="AssemblyVersionInfo" value="AssemblyVersion" />
+            <property name="CopyrightText" value="2004 to 2006 Karl Waclawek" />
+            <property name="FeedbackEmailAddress" value="karl@waclawek.net" />
+        </documenter>
+        <documenter name="XML">
+            <property name="OutputFile" value=".\doc\doc.xml" />
+        </documenter>
+        <documenter name="MSDN-Web">
+            <property name="OutputDirectory" value=".\doc\" />
+            <property name="HtmlHelpName" value="SAXExpat.NET" />
+            <property name="Title" value="SAX for .NET Adapter for Expat" />
+            <property name="Version" value="2.0.0.0" />
+            <property name="DocumentInternals" value="True" />
+            <property name="AssemblyVersionInfo" value="AssemblyVersion" />
+            <property name="CopyrightText" value="2004 to 2006 Karl Waclawek" />
+            <property name="FeedbackEmailAddress" value="karl@waclawek.net" />
+        </documenter>
+        <documenter name="Intellisense">
+            <property name="OutputDirectory" value=".\intellisense\" />
+        </documenter>
+    </documenters>
+</project>

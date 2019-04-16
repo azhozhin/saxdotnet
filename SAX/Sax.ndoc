@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<project SchemaVersion="2.0">
+    <assemblies>
+        <assembly location=".\bin\Release\Sax.dll" documentation=".\bin\Release\Sax.xml" />
+    </assemblies>
+    <documenters>
+        <documenter name="MSDN-Help2">
+            <property name="PlugInNamespace" value="ms.vscc" />
+            <property name="OutputDirectory" value=".\doc\" />
+            <property name="HtmlHelpName" value="Documentation" />
+            <property name="Title" value="An NDoc documented library" />
+        </documenter>
+        <documenter name="MSDN-CHM">
+            <property name="OutputDirectory" value=".\doc\" />
+            <property name="HtmlHelpName" value="SAX for .NET" />
+            <property name="Title" value="SAX for .NET" />
+            <property name="Version" value="2.0.0.0" />
+            <property name="AssemblyVersionInfo" value="AssemblyVersion" />
+        </documenter>
+        <documenter name="XML">
+            <property name="OutputFile" value=".\doc\doc.xml" />
+        </documenter>
+        <documenter name="MSDN-Web">
+            <property name="OutputDirectory" value=".\doc\" />
+            <property name="HtmlHelpName" value="SAX for .NET" />
+            <property name="Title" value="SAX for .NET" />
+            <property name="Version" value="2.0.0.0" />
+            <property name="AssemblyVersionInfo" value="AssemblyVersion" />
+        </documenter>
+        <documenter name="Intellisense">
+            <property name="OutputDirectory" value=".\intellisense\" />
+        </documenter>
+    </documenters>
+</project>

@@ -1,0 +1,41 @@
+
+                  Change Log for SAXExpat.NET
+				  
+Release 1.5 -> 2.0
+
+* Migrated code to .NET 2.0, using generics and new "constrained
+  execution region" feature to better guard against resource leaks.
+* Some minor changes in API and helper classes, to take advantage
+  of generics.
+* Build of ExpatInterop.dll simplified, no need for post-processing
+  anymore, since delegates can now have the cdecl calling convention
+  under .NET 2.0.
+* New layer introduced: ExpatParser class represents an OO-wrapper
+  that hides the Expat API. Modified SAXExpat to use this wrapper.
+* Minor code improvements and fixes.
+
+Release 1.0 -> 1.5
+
+* Changed implementation to conform to release 1.5 of SAX for .NET.
+* Some minor bug fixes in the interop code.
+* Improved XML documentation.
+
+Release 0.91 -> 1.0
+
+* Split ExpatInterop.dll out of SaxExpat.dll so that
+  the Expat interop code can be re-used elsewhere.
+* Changed build scripts to C# scripts that can run on
+  MS.NET and Mono (at least in theory). 
+* Replaced SharpDevelop project files with
+  VisualStudio.NET 2003 project files.
+* Minor bug fixes.
+
+Release 0.9 -> 0.91
+
+* Build scripts can create output directories.
+* Made assemblies CLS compliant as much as possible.
+* Changed implementation of namespace-prefixes feature
+  to be read-only and follow the value of the namespaces
+  feature on which it depends in SAXExpat.
+* Fixed nasty bug parsing qualified names returned by Expat.
+* Other Internal fixes/changes.
